@@ -9,7 +9,9 @@
   },
   "scripts": {
     "test": "mocha",
+    "test-no-ui": "mocha --exclude='*/selenium/*.js'",
     "start": "webpack watch --mode=development",
+    "build": "webpack",
     "release": "webpack --mode=production --env RELEASE=stable && rm -r ./build-release",
     "dev-release": "webpack --mode=production --env RELEASE=dev-channel && rm -r ./build-release",
     "prepare": "husky install"
@@ -33,7 +35,7 @@
     "deep-is": "^0.1.4",
     "deepmerge": "^4.2.2",
     "fast-json-patch": "^3.1.0",
-    "fast-xml-parser": "^4.0.9",
+    "fast-xml-parser": "^4.0.10",
     "highlight.js": "^11.3.1",
     "ini": "^3.0.1",
     "js-base64": "^3.7.2",
@@ -48,15 +50,13 @@
     "react": "^18.2.0",
     "react-ace": "^10.1.0",
     "react-dom": "^18.2.0",
-    "react-redux": "^8.0.2",
-    "react-select": "^5.2.1",
-    "react-switch": "^7.0.0",
+    "react-redux": "^8.0.4",
     "redux": "^4.1.2",
     "sharp": "^0.31.0",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.1",
+    "@babel/core": "^7.19.3",
     "@babel/eslint-parser": "^7.19.1",
     "@babel/plugin-proposal-class-properties": "^7.16.7",
     "@babel/plugin-transform-runtime": "^7.19.1",
@@ -67,10 +67,10 @@
     "@commitlint/config-conventional": "^17.1.0",
     "babel-loader": "^8.2.3",
     "chai": "^4.3.4",
-    "chromedriver": "^105.0.0",
+    "chromedriver": "^105.0.1",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.5.1",
-    "eslint": "^8.23.1",
+    "eslint": "^8.24.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-header": "^3.1.1",
     "eslint-plugin-import": "^2.25.4",
@@ -109,5 +109,5 @@
     "*.less": "stylelint --cache --fix",
     "*.md": "npx markdownlint-cli --fix --config .markdownlint.jsonc"
   },
-  "version": "8.2.0"
+  "version": "8.2.5"
 }
