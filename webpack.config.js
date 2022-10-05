@@ -183,6 +183,10 @@ module.exports = (env) => {
           use: [MiniCssExtractPlugin.loader, 'css-loader', 'less-loader']
         },
         {
+          test: /\.css$/i,
+          use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+        },
+        {
           test: /\.md$/,
           use: [
             {

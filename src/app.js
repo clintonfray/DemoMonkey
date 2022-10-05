@@ -11,6 +11,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import '../styles/main.css'
 import '../styles/main.less'
 import '../icons/monkey.png'
 import '../icons/monkey-dev.png'
