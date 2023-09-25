@@ -42,7 +42,7 @@
     "json5": "^2.2.3",
     "jszip": "^3.10.1",
     "lodash.omit": "^4.5.0",
-    "marked": "^4.1.0",
+    "marked": "^9.0.3",
     "moment": "^2.29.1",
     "mousetrap": "^1.6.5",
     "prettier": "^2.8.4",
